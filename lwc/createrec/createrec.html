@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Create Account Record From HomePage">
+        <div class="slds-m-around_medium">
+            <lightning-input label="AccountId" 
+            disabled value={Accountval}>
+        </lightning-input>
+
+            <lightning-input label="Name" 
+            onchange={handlename}>
+        </lightning-input>
+
+            <lightning-combobox label="Industry" 
+            value={value} 
+            placeholder="Select Industry" 
+            options={options} 
+            onchange={handleIndustry}>
+        </lightning-combobox>
+        </div>
+      
+        <div class="slds-text-align_center">
+            <lightning-button variant="brand" 
+            label= "Save"  
+            title="Save" 
+            onclick={handlesave}>
+        </lightning-button>
+        </div>
+    </lightning-card>
+</template>
